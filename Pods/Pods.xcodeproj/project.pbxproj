@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031A2C6B9DB3C9DD269CE165A015AE1A /* DatePickerTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBA46B1C180E48DB9BD732210B172DF /* DatePickerTextField-dummy.m */; };
+		1003935FDB106629DF5B6E4E6C438581 /* VMaskEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAF1D0865EE6C5490E6A79487975FEF /* VMaskEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11E0CE549B9A14531D9A617173082FDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		27C8AAFF55C6C6F8BE5C591F491F40BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		3035B9B387ABD75B36E0E52C73D9CAFD /* VMaskTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CA4449FEEAB2B9E662AE47C2C9F702 /* VMaskTextField-dummy.m */; };
+		36FA72F08FB17CFC9D080EA0E61305BF /* DatePickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FC70C6D76C2B66573F4C770E42550D /* DatePickerTextField.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		48C808E8D686B0F06ACA97C2E6BA8216 /* DatePickerTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C118021CBA50BBDDCC39FA2C2D1BD7 /* DatePickerTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FA89D1EA75C77D9A6F9964CDC9E4B40 /* DatePickerTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 92FEE844BD0ED3853B3188BEEDFF51F6 /* DatePickerTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71E0669658D86EDED2FD02652116890A /* VMaskEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9EBDE751B4BFF21C2D42B32A0CD49 /* VMaskEditor.m */; };
+		8E01898F152A86D329CF5B8C27119A9A /* VMaskTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AA4E882D070449E6CE74F9FF5BAE53 /* VMaskTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93EE8E18A18C0911EE99E85D96898B57 /* VMaskTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 969097BCEA1BA9719DDD0B8FECA29F4A /* VMaskTextField.m */; };
+		A52D7C8861F396EB03922E7B1E4CCD21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		AD27C417ACBEDB76BA64624EE45FBFF6 /* Pods-FinTrack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F7BB34561292643B1151C53EBE1383 /* Pods-FinTrack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD1A34A85F792A9C970639D977DC100A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		DE9EC8B1600B98A29A46352796D1A1B2 /* VMaskTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E3B46BAC4F78CAE9C321A4D815B775 /* VMaskTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F60CE59D7A8B347BB091A9A3CA24EFE3 /* Pods-FinTrack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0586FD9DB95F01BC8929771A2F87A56 /* Pods-FinTrack-dummy.m */; };
+		FB12E57CDD0803ACD2E1F0864FB2E94C /* VMaskTextField-VMaskTextField in Resources */ = {isa = PBXBuildFile; fileRef = 4AADE1DEAAB177F044FF2FF45BF5B0FC /* VMaskTextField-VMaskTextField */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B6BF2BBFCEA4CE58EEAA7ACBF9C65C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5950556BA602AB8DC938CF68D112D3D;
+			remoteInfo = DatePickerTextField;
+		};
+		2C2DBAEAADD56E3F44044CED47232D1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 088B8C3B51FC2AFA7E98EC5DB30033F6;
+			remoteInfo = VMaskTextField;
+		};
+		AB6054EA96D4C0E57C4CEDD743E3DA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E763F14765476678A309E392653B3498;
+			remoteInfo = "VMaskTextField-VMaskTextField";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03C118021CBA50BBDDCC39FA2C2D1BD7 /* DatePickerTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DatePickerTextField-umbrella.h"; sourceTree = "<group>"; };
+		05F7BB34561292643B1151C53EBE1383 /* Pods-FinTrack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FinTrack-umbrella.h"; sourceTree = "<group>"; };
+		06FC70C6D76C2B66573F4C770E42550D /* DatePickerTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DatePickerTextField.m; path = DatePickerTextFieldDemo/DatePickerTextField/DatePickerTextField.m; sourceTree = "<group>"; };
+		080A03A4E2E26603E0B0B2D5D57B02CF /* Pods-FinTrack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinTrack-Info.plist"; sourceTree = "<group>"; };
+		222338426F8F0B23CFEE86F07FA3F937 /* VMaskTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VMaskTextField.release.xcconfig; sourceTree = "<group>"; };
+		3AD8B231174C87B45A5BBF0E7C3F0551 /* DatePickerTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DatePickerTextField-Info.plist"; sourceTree = "<group>"; };
+		44A5F1F8BE04FA95D6CE14188008BFCC /* VMaskTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VMaskTextField-prefix.pch"; sourceTree = "<group>"; };
+		4AADE1DEAAB177F044FF2FF45BF5B0FC /* VMaskTextField-VMaskTextField */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "VMaskTextField-VMaskTextField"; path = VMaskTextField.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B029FB8AF9CBDDFA3271115438AC575 /* DatePickerTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DatePickerTextField.release.xcconfig; sourceTree = "<group>"; };
+		5E403E231D9A6ADA3272EF210DDB77D7 /* Pods-FinTrack-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinTrack-acknowledgements.plist"; sourceTree = "<group>"; };
+		6BB9EBDE751B4BFF21C2D42B32A0CD49 /* VMaskEditor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VMaskEditor.m; path = Pod/Classes/VMaskEditor.m; sourceTree = "<group>"; };
+		72A2CAB0C056B2D8EDC08D3724B52B9C /* VMaskTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VMaskTextField-Info.plist"; sourceTree = "<group>"; };
+		850DB20F38C533997A07D8B8E3DBDD0B /* DatePickerTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DatePickerTextField-prefix.pch"; sourceTree = "<group>"; };
+		92FEE844BD0ED3853B3188BEEDFF51F6 /* DatePickerTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DatePickerTextField.h; path = DatePickerTextFieldDemo/DatePickerTextField/DatePickerTextField.h; sourceTree = "<group>"; };
+		93AA4E882D070449E6CE74F9FF5BAE53 /* VMaskTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VMaskTextField.h; path = Pod/Classes/VMaskTextField.h; sourceTree = "<group>"; };
+		93CA4449FEEAB2B9E662AE47C2C9F702 /* VMaskTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VMaskTextField-dummy.m"; sourceTree = "<group>"; };
+		969097BCEA1BA9719DDD0B8FECA29F4A /* VMaskTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VMaskTextField.m; path = Pod/Classes/VMaskTextField.m; sourceTree = "<group>"; };
+		9ACE953427975E750B3473FF5A4D6C39 /* Pods-FinTrack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FinTrack.modulemap"; sourceTree = "<group>"; };
+		9B9D3E7654540D60B561E826B749396C /* ResourceBundle-VMaskTextField-VMaskTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-VMaskTextField-VMaskTextField-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4E3B46BAC4F78CAE9C321A4D815B775 /* VMaskTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VMaskTextField-umbrella.h"; sourceTree = "<group>"; };
+		A61C9D309030341C765062AFF5B6298A /* Pods-FinTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinTrack.debug.xcconfig"; sourceTree = "<group>"; };
+		A72022F4F9CCF8490CF685D18536E514 /* DatePickerTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DatePickerTextField.debug.xcconfig; sourceTree = "<group>"; };
+		AC806CAB458606F3A38FCAE786F1EC26 /* DatePickerTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DatePickerTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE960A569EBC20443EB07A9865D5AA7C /* VMaskTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VMaskTextField.modulemap; sourceTree = "<group>"; };
+		C85D9A9053DA3A3714801AF4EFAA19F1 /* Pods-FinTrack-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FinTrack-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB306F9FB5D0E9A8FF5F0F1452B93FCF /* Pods-FinTrack-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FinTrack-frameworks.sh"; sourceTree = "<group>"; };
+		D0586FD9DB95F01BC8929771A2F87A56 /* Pods-FinTrack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FinTrack-dummy.m"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D7D7674DED035D585FACBD7C450DFD00 /* Pods-FinTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinTrack.release.xcconfig"; sourceTree = "<group>"; };
+		E5F9DD1F249D9576D7AEA3DD14BF6F73 /* VMaskTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VMaskTextField.debug.xcconfig; sourceTree = "<group>"; };
+		EA97574CD0726F7B5D00DCD25F80A9EF /* VMaskTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VMaskTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EAF513A074F40B1A20B9C6044D52E681 /* Pods-FinTrack */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FinTrack"; path = Pods_FinTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAF1D0865EE6C5490E6A79487975FEF /* VMaskEditor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VMaskEditor.h; path = Pod/Classes/VMaskEditor.h; sourceTree = "<group>"; };
+		FDBA46B1C180E48DB9BD732210B172DF /* DatePickerTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DatePickerTextField-dummy.m"; sourceTree = "<group>"; };
+		FF74EA8581F3EC76A3930B115E2D552A /* DatePickerTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DatePickerTextField.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		099695D843D64FFF8F97835CEAEBE69D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		561930253C071D8B9D5295431BCBC410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C8AAFF55C6C6F8BE5C591F491F40BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E94721D591080B51D7D39034127F4B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1A34A85F792A9C970639D977DC100A /* Foundation.framework in Frameworks */,
+				11E0CE549B9A14531D9A617173082FDF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F114E8578BFEA55FFE4C7875EA1DC6BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52D7C8861F396EB03922E7B1E4CCD21 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21148C0382C24E764DA4C6868144804D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C5BFEAA0DAF7B383194FBEBA59117C5 /* Pods-FinTrack */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2C5BFEAA0DAF7B383194FBEBA59117C5 /* Pods-FinTrack */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE953427975E750B3473FF5A4D6C39 /* Pods-FinTrack.modulemap */,
+				C85D9A9053DA3A3714801AF4EFAA19F1 /* Pods-FinTrack-acknowledgements.markdown */,
+				5E403E231D9A6ADA3272EF210DDB77D7 /* Pods-FinTrack-acknowledgements.plist */,
+				D0586FD9DB95F01BC8929771A2F87A56 /* Pods-FinTrack-dummy.m */,
+				CB306F9FB5D0E9A8FF5F0F1452B93FCF /* Pods-FinTrack-frameworks.sh */,
+				080A03A4E2E26603E0B0B2D5D57B02CF /* Pods-FinTrack-Info.plist */,
+				05F7BB34561292643B1151C53EBE1383 /* Pods-FinTrack-umbrella.h */,
+				A61C9D309030341C765062AFF5B6298A /* Pods-FinTrack.debug.xcconfig */,
+				D7D7674DED035D585FACBD7C450DFD00 /* Pods-FinTrack.release.xcconfig */,
+			);
+			name = "Pods-FinTrack";
+			path = "Target Support Files/Pods-FinTrack";
+			sourceTree = "<group>";
+		};
+		3DDF62F7B29F2A910EF5805E51525B16 /* VMaskTextField */ = {
+			isa = PBXGroup;
+			children = (
+				FAAF1D0865EE6C5490E6A79487975FEF /* VMaskEditor.h */,
+				6BB9EBDE751B4BFF21C2D42B32A0CD49 /* VMaskEditor.m */,
+				93AA4E882D070449E6CE74F9FF5BAE53 /* VMaskTextField.h */,
+				969097BCEA1BA9719DDD0B8FECA29F4A /* VMaskTextField.m */,
+				BC562798BA0B904C896069071F2FDFAF /* Support Files */,
+			);
+			path = VMaskTextField;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9ECA5EE596E5A4FFAB69A19006B31A71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6D53E7A4F68EAF8701F811FEC50EC00 /* DatePickerTextField */,
+				3DDF62F7B29F2A910EF5805E51525B16 /* VMaskTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6D53E7A4F68EAF8701F811FEC50EC00 /* DatePickerTextField */ = {
+			isa = PBXGroup;
+			children = (
+				92FEE844BD0ED3853B3188BEEDFF51F6 /* DatePickerTextField.h */,
+				06FC70C6D76C2B66573F4C770E42550D /* DatePickerTextField.m */,
+				D36AD8F1D9511E648A8932DFCF004257 /* Support Files */,
+			);
+			path = DatePickerTextField;
+			sourceTree = "<group>";
+		};
+		BC562798BA0B904C896069071F2FDFAF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B9D3E7654540D60B561E826B749396C /* ResourceBundle-VMaskTextField-VMaskTextField-Info.plist */,
+				AE960A569EBC20443EB07A9865D5AA7C /* VMaskTextField.modulemap */,
+				93CA4449FEEAB2B9E662AE47C2C9F702 /* VMaskTextField-dummy.m */,
+				72A2CAB0C056B2D8EDC08D3724B52B9C /* VMaskTextField-Info.plist */,
+				44A5F1F8BE04FA95D6CE14188008BFCC /* VMaskTextField-prefix.pch */,
+				A4E3B46BAC4F78CAE9C321A4D815B775 /* VMaskTextField-umbrella.h */,
+				E5F9DD1F249D9576D7AEA3DD14BF6F73 /* VMaskTextField.debug.xcconfig */,
+				222338426F8F0B23CFEE86F07FA3F937 /* VMaskTextField.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VMaskTextField";
+			sourceTree = "<group>";
+		};
+		C0EE5742DA7F25F934361FE6E0C76361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC806CAB458606F3A38FCAE786F1EC26 /* DatePickerTextField.framework */,
+				EAF513A074F40B1A20B9C6044D52E681 /* Pods-FinTrack */,
+				EA97574CD0726F7B5D00DCD25F80A9EF /* VMaskTextField.framework */,
+				4AADE1DEAAB177F044FF2FF45BF5B0FC /* VMaskTextField-VMaskTextField */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				9ECA5EE596E5A4FFAB69A19006B31A71 /* Pods */,
+				C0EE5742DA7F25F934361FE6E0C76361 /* Products */,
+				21148C0382C24E764DA4C6868144804D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D36AD8F1D9511E648A8932DFCF004257 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF74EA8581F3EC76A3930B115E2D552A /* DatePickerTextField.modulemap */,
+				FDBA46B1C180E48DB9BD732210B172DF /* DatePickerTextField-dummy.m */,
+				3AD8B231174C87B45A5BBF0E7C3F0551 /* DatePickerTextField-Info.plist */,
+				850DB20F38C533997A07D8B8E3DBDD0B /* DatePickerTextField-prefix.pch */,
+				03C118021CBA50BBDDCC39FA2C2D1BD7 /* DatePickerTextField-umbrella.h */,
+				A72022F4F9CCF8490CF685D18536E514 /* DatePickerTextField.debug.xcconfig */,
+				5B029FB8AF9CBDDFA3271115438AC575 /* DatePickerTextField.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DatePickerTextField";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04D094E2D46F363EED6C72047F4EA082 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003935FDB106629DF5B6E4E6C438581 /* VMaskEditor.h in Headers */,
+				8E01898F152A86D329CF5B8C27119A9A /* VMaskTextField.h in Headers */,
+				DE9EC8B1600B98A29A46352796D1A1B2 /* VMaskTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CE0A8C4D41858C672ECCD29554675D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD27C417ACBEDB76BA64624EE45FBFF6 /* Pods-FinTrack-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3BD40A86DE9DD9A678BE48773850007 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA89D1EA75C77D9A6F9964CDC9E4B40 /* DatePickerTextField.h in Headers */,
+				48C808E8D686B0F06ACA97C2E6BA8216 /* DatePickerTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		088B8C3B51FC2AFA7E98EC5DB30033F6 /* VMaskTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31126B59579B3EF127AE93BED9DC075 /* Build configuration list for PBXNativeTarget "VMaskTextField" */;
+			buildPhases = (
+				04D094E2D46F363EED6C72047F4EA082 /* Headers */,
+				CE5412B8402CE068C2C65C6C9DDCC86C /* Sources */,
+				561930253C071D8B9D5295431BCBC410 /* Frameworks */,
+				A445F003F6350F1CA43B96D64F7EFD3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13D370F12769E8BFAB0FAA403F7B5557 /* PBXTargetDependency */,
+			);
+			name = VMaskTextField;
+			productName = VMaskTextField;
+			productReference = EA97574CD0726F7B5D00DCD25F80A9EF /* VMaskTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6EED06D688815C1751541FC361F94BD2 /* Pods-FinTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490967FD66C5787BC1EFD2280AE892D6 /* Build configuration list for PBXNativeTarget "Pods-FinTrack" */;
+			buildPhases = (
+				2CE0A8C4D41858C672ECCD29554675D5 /* Headers */,
+				162B8571E2551523C1BD8FE2A42216B7 /* Sources */,
+				F114E8578BFEA55FFE4C7875EA1DC6BB /* Frameworks */,
+				66FD7A1D517F6523A81655DDFE5CBE8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2064B8FE8A7A87C179E28772CC180261 /* PBXTargetDependency */,
+				C0951A1E9DA08A03B129033D6C900DCF /* PBXTargetDependency */,
+			);
+			name = "Pods-FinTrack";
+			productName = Pods_FinTrack;
+			productReference = EAF513A074F40B1A20B9C6044D52E681 /* Pods-FinTrack */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5950556BA602AB8DC938CF68D112D3D /* DatePickerTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2BA27E13136E457F49C802BF3EAFCF3 /* Build configuration list for PBXNativeTarget "DatePickerTextField" */;
+			buildPhases = (
+				F3BD40A86DE9DD9A678BE48773850007 /* Headers */,
+				269E59F4933ADF97D026EB212DAFBCD4 /* Sources */,
+				E94721D591080B51D7D39034127F4B53 /* Frameworks */,
+				EB035CFE6B0EB923251166BB6AB6DC6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatePickerTextField;
+			productName = DatePickerTextField;
+			productReference = AC806CAB458606F3A38FCAE786F1EC26 /* DatePickerTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E763F14765476678A309E392653B3498 /* VMaskTextField-VMaskTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239D9546677E843A9A2CD8FFD0929FCA /* Build configuration list for PBXNativeTarget "VMaskTextField-VMaskTextField" */;
+			buildPhases = (
+				562875489DBA93F41A0892254CC54445 /* Sources */,
+				099695D843D64FFF8F97835CEAEBE69D /* Frameworks */,
+				BB2A06EDE89121692A6F273F1FFE2A91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VMaskTextField-VMaskTextField";
+			productName = VMaskTextField;
+			productReference = 4AADE1DEAAB177F044FF2FF45BF5B0FC /* VMaskTextField-VMaskTextField */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C0EE5742DA7F25F934361FE6E0C76361 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5950556BA602AB8DC938CF68D112D3D /* DatePickerTextField */,
+				6EED06D688815C1751541FC361F94BD2 /* Pods-FinTrack */,
+				088B8C3B51FC2AFA7E98EC5DB30033F6 /* VMaskTextField */,
+				E763F14765476678A309E392653B3498 /* VMaskTextField-VMaskTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66FD7A1D517F6523A81655DDFE5CBE8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A445F003F6350F1CA43B96D64F7EFD3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB12E57CDD0803ACD2E1F0864FB2E94C /* VMaskTextField-VMaskTextField in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2A06EDE89121692A6F273F1FFE2A91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB035CFE6B0EB923251166BB6AB6DC6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		162B8571E2551523C1BD8FE2A42216B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60CE59D7A8B347BB091A9A3CA24EFE3 /* Pods-FinTrack-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269E59F4933ADF97D026EB212DAFBCD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FA72F08FB17CFC9D080EA0E61305BF /* DatePickerTextField.m in Sources */,
+				031A2C6B9DB3C9DD269CE165A015AE1A /* DatePickerTextField-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		562875489DBA93F41A0892254CC54445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5412B8402CE068C2C65C6C9DDCC86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E0669658D86EDED2FD02652116890A /* VMaskEditor.m in Sources */,
+				93EE8E18A18C0911EE99E85D96898B57 /* VMaskTextField.m in Sources */,
+				3035B9B387ABD75B36E0E52C73D9CAFD /* VMaskTextField-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13D370F12769E8BFAB0FAA403F7B5557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VMaskTextField-VMaskTextField";
+			target = E763F14765476678A309E392653B3498 /* VMaskTextField-VMaskTextField */;
+			targetProxy = AB6054EA96D4C0E57C4CEDD743E3DA48 /* PBXContainerItemProxy */;
+		};
+		2064B8FE8A7A87C179E28772CC180261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DatePickerTextField;
+			target = B5950556BA602AB8DC938CF68D112D3D /* DatePickerTextField */;
+			targetProxy = 18B6BF2BBFCEA4CE58EEAA7ACBF9C65C /* PBXContainerItemProxy */;
+		};
+		C0951A1E9DA08A03B129033D6C900DCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VMaskTextField;
+			target = 088B8C3B51FC2AFA7E98EC5DB30033F6 /* VMaskTextField */;
+			targetProxy = 2C2DBAEAADD56E3F44044CED47232D1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		017A7709AD70F1CED52F03FA893FE065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F9DD1F249D9576D7AEA3DD14BF6F73 /* VMaskTextField.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VMaskTextField";
+				IBSC_MODULE = VMaskTextField;
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/ResourceBundle-VMaskTextField-VMaskTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2A9EA0332323C76EDD7118586F7A2B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F9DD1F249D9576D7AEA3DD14BF6F73 /* VMaskTextField.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VMaskTextField/VMaskTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/VMaskTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VMaskTextField/VMaskTextField.modulemap";
+				PRODUCT_MODULE_NAME = VMaskTextField;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32DAA1115625E7FFC9F666E5CD560528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61C9D309030341C765062AFF5B6298A /* Pods-FinTrack.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FinTrack/Pods-FinTrack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FinTrack/Pods-FinTrack.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47C7F57940ECFF0236D931743FC1C7CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B029FB8AF9CBDDFA3271115438AC575 /* DatePickerTextField.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DatePickerTextField/DatePickerTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DatePickerTextField/DatePickerTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DatePickerTextField/DatePickerTextField.modulemap";
+				PRODUCT_MODULE_NAME = DatePickerTextField;
+				PRODUCT_NAME = DatePickerTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE647A22229A0E1CAEE48B2852DB8DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 222338426F8F0B23CFEE86F07FA3F937 /* VMaskTextField.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VMaskTextField/VMaskTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/VMaskTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VMaskTextField/VMaskTextField.modulemap";
+				PRODUCT_MODULE_NAME = VMaskTextField;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AC87CBAA95F6EC591FB3538840337E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 222338426F8F0B23CFEE86F07FA3F937 /* VMaskTextField.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VMaskTextField";
+				IBSC_MODULE = VMaskTextField;
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/ResourceBundle-VMaskTextField-VMaskTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B4313ADFDAB6166CEE5790662A80BC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7D7674DED035D585FACBD7C450DFD00 /* Pods-FinTrack.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FinTrack/Pods-FinTrack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FinTrack/Pods-FinTrack.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B5369126A42EA0EA60BA305DD9E50C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A72022F4F9CCF8490CF685D18536E514 /* DatePickerTextField.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DatePickerTextField/DatePickerTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DatePickerTextField/DatePickerTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DatePickerTextField/DatePickerTextField.modulemap";
+				PRODUCT_MODULE_NAME = DatePickerTextField;
+				PRODUCT_NAME = DatePickerTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		239D9546677E843A9A2CD8FFD0929FCA /* Build configuration list for PBXNativeTarget "VMaskTextField-VMaskTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017A7709AD70F1CED52F03FA893FE065 /* Debug */,
+				AC87CBAA95F6EC591FB3538840337E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490967FD66C5787BC1EFD2280AE892D6 /* Build configuration list for PBXNativeTarget "Pods-FinTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32DAA1115625E7FFC9F666E5CD560528 /* Debug */,
+				B4313ADFDAB6166CEE5790662A80BC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2BA27E13136E457F49C802BF3EAFCF3 /* Build configuration list for PBXNativeTarget "DatePickerTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5369126A42EA0EA60BA305DD9E50C51 /* Debug */,
+				47C7F57940ECFF0236D931743FC1C7CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31126B59579B3EF127AE93BED9DC075 /* Build configuration list for PBXNativeTarget "VMaskTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A9EA0332323C76EDD7118586F7A2B9B /* Debug */,
+				7EE647A22229A0E1CAEE48B2852DB8DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

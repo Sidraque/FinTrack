@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C30359D32A3A618F00032341 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30359D22A3A618F00032341 /* ForgotPasswordViewController.swift */; };
+		C30359D52A3A619E00032341 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30359D42A3A619E00032341 /* ForgotPasswordView.swift */; };
+		C39D0D0D2A3977680026574D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0CEC2A3977680026574D /* HomeViewModel.swift */; };
+		C39D0D0E2A3977680026574D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0CEE2A3977680026574D /* LoginViewModel.swift */; };
+		C39D0D0F2A3977680026574D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39D0CF02A3977680026574D /* Assets.xcassets */; };
+		C39D0D102A3977680026574D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39D0CF12A3977680026574D /* LaunchScreen.storyboard */; };
+		C39D0D112A3977680026574D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39D0CF32A3977680026574D /* Main.storyboard */; };
+		C39D0D122A3977680026574D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0CF62A3977680026574D /* Category.swift */; };
+		C39D0D132A3977680026574D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0CF72A3977680026574D /* Transaction.swift */; };
+		C39D0D142A3977680026574D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0CF92A3977680026574D /* AppDelegate.swift */; };
+		C39D0D152A3977680026574D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0CFA2A3977680026574D /* SceneDelegate.swift */; };
+		C39D0D162A3977680026574D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0CFD2A3977680026574D /* HomeView.swift */; };
+		C39D0D172A3977680026574D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0CFE2A3977680026574D /* HomeViewController.swift */; };
+		C39D0D182A3977680026574D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D002A3977680026574D /* RegisterView.swift */; };
+		C39D0D192A3977680026574D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D012A3977680026574D /* RegisterViewController.swift */; };
+		C39D0D1A2A3977680026574D /* AddTransactionPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D042A3977680026574D /* AddTransactionPopupView.swift */; };
+		C39D0D1B2A3977680026574D /* AddTransactionPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D052A3977680026574D /* AddTransactionPopupViewController.swift */; };
+		C39D0D1C2A3977680026574D /* AddCategoryPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D072A3977680026574D /* AddCategoryPopupView.swift */; };
+		C39D0D1D2A3977680026574D /* AddCategoryPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D082A3977680026574D /* AddCategoryPopupViewController.swift */; };
+		C39D0D1E2A3977680026574D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D0A2A3977680026574D /* LoginView.swift */; };
+		C39D0D1F2A3977680026574D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D0B2A3977680026574D /* LoginViewController.swift */; };
+		FEDC577DEBA1D409935C1E41 /* Pods_FinTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F9E50F5AFFF96036745A85 /* Pods_FinTrack.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03F9E50F5AFFF96036745A85 /* Pods_FinTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C858F4F5CD35061A0DD9D4E /* Pods-FinTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinTrack.release.xcconfig"; path = "Target Support Files/Pods-FinTrack/Pods-FinTrack.release.xcconfig"; sourceTree = "<group>"; };
+		C30359D22A3A618F00032341 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		C30359D42A3A619E00032341 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		C39D0CEC2A3977680026574D /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C39D0CEE2A3977680026574D /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C39D0CF02A3977680026574D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C39D0CF22A3977680026574D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C39D0CF42A3977680026574D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C39D0CF62A3977680026574D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C39D0CF72A3977680026574D /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		C39D0CF92A3977680026574D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C39D0CFA2A3977680026574D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C39D0CFD2A3977680026574D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C39D0CFE2A3977680026574D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C39D0D002A3977680026574D /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		C39D0D012A3977680026574D /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C39D0D042A3977680026574D /* AddTransactionPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionPopupView.swift; sourceTree = "<group>"; };
+		C39D0D052A3977680026574D /* AddTransactionPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionPopupViewController.swift; sourceTree = "<group>"; };
+		C39D0D072A3977680026574D /* AddCategoryPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryPopupView.swift; sourceTree = "<group>"; };
+		C39D0D082A3977680026574D /* AddCategoryPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryPopupViewController.swift; sourceTree = "<group>"; };
+		C39D0D0A2A3977680026574D /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C39D0D0B2A3977680026574D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C39D0D0C2A3977680026574D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3FE36B22A3974A50067774F /* FinTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA2FDE33CC69D5A6685F37B /* Pods-FinTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinTrack.debug.xcconfig"; path = "Target Support Files/Pods-FinTrack/Pods-FinTrack.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3FE36AF2A3974A50067774F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDC577DEBA1D409935C1E41 /* Pods_FinTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C30359D12A3A617700032341 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				C30359D22A3A618F00032341 /* ForgotPasswordViewController.swift */,
+				C30359D42A3A619E00032341 /* ForgotPasswordView.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		C39D0CE92A3977680026574D /* FinTrack */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0CFB2A3977680026574D /* Views */,
+				C39D0CF52A3977680026574D /* Models */,
+				C39D0CEA2A3977680026574D /* ViewModels */,
+				C39D0CEF2A3977680026574D /* Resources */,
+				C39D0CF82A3977680026574D /* SupportingFiles */,
+				C39D0D0C2A3977680026574D /* Info.plist */,
+			);
+			path = FinTrack;
+			sourceTree = "<group>";
+		};
+		C39D0CEA2A3977680026574D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0CEB2A3977680026574D /* Home */,
+				C39D0CED2A3977680026574D /* Login */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C39D0CEB2A3977680026574D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0CEC2A3977680026574D /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C39D0CED2A3977680026574D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0CEE2A3977680026574D /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C39D0CEF2A3977680026574D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0CF02A3977680026574D /* Assets.xcassets */,
+				C39D0CF12A3977680026574D /* LaunchScreen.storyboard */,
+				C39D0CF32A3977680026574D /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C39D0CF52A3977680026574D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0CF62A3977680026574D /* Category.swift */,
+				C39D0CF72A3977680026574D /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C39D0CF82A3977680026574D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0CF92A3977680026574D /* AppDelegate.swift */,
+				C39D0CFA2A3977680026574D /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C39D0CFB2A3977680026574D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C30359D12A3A617700032341 /* ForgotPassword */,
+				C39D0CFF2A3977680026574D /* Register */,
+				C39D0D092A3977680026574D /* Login */,
+				C39D0CFC2A3977680026574D /* Home */,
+				C39D0D022A3977680026574D /* Popups */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C39D0CFC2A3977680026574D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0CFD2A3977680026574D /* HomeView.swift */,
+				C39D0CFE2A3977680026574D /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C39D0CFF2A3977680026574D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0D002A3977680026574D /* RegisterView.swift */,
+				C39D0D012A3977680026574D /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C39D0D022A3977680026574D /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0D032A3977680026574D /* Transaction */,
+				C39D0D062A3977680026574D /* Category */,
+			);
+			path = Popups;
+			sourceTree = "<group>";
+		};
+		C39D0D032A3977680026574D /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0D042A3977680026574D /* AddTransactionPopupView.swift */,
+				C39D0D052A3977680026574D /* AddTransactionPopupViewController.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		C39D0D062A3977680026574D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0D072A3977680026574D /* AddCategoryPopupView.swift */,
+				C39D0D082A3977680026574D /* AddCategoryPopupViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C39D0D092A3977680026574D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C39D0D0A2A3977680026574D /* LoginView.swift */,
+				C39D0D0B2A3977680026574D /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C3FE36A92A3974A50067774F = {
+			isa = PBXGroup;
+			children = (
+				C39D0CE92A3977680026574D /* FinTrack */,
+				C3FE36B32A3974A50067774F /* Products */,
+				DE7A5DFBC41838B5C3BB6254 /* Pods */,
+				D4F81809FE96D3611876E890 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3FE36B32A3974A50067774F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3FE36B22A3974A50067774F /* FinTrack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4F81809FE96D3611876E890 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03F9E50F5AFFF96036745A85 /* Pods_FinTrack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE7A5DFBC41838B5C3BB6254 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDA2FDE33CC69D5A6685F37B /* Pods-FinTrack.debug.xcconfig */,
+				3C858F4F5CD35061A0DD9D4E /* Pods-FinTrack.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3FE36B12A3974A50067774F /* FinTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3FE36C62A3974A60067774F /* Build configuration list for PBXNativeTarget "FinTrack" */;
+			buildPhases = (
+				F6ABD14593663E53775BAD72 /* [CP] Check Pods Manifest.lock */,
+				C3FE36AE2A3974A50067774F /* Sources */,
+				C3FE36AF2A3974A50067774F /* Frameworks */,
+				C3FE36B02A3974A50067774F /* Resources */,
+				B9CAF4EB069E3F1761F508D1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinTrack;
+			productName = FinTrack;
+			productReference = C3FE36B22A3974A50067774F /* FinTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3FE36AA2A3974A50067774F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C3FE36B12A3974A50067774F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C3FE36AD2A3974A50067774F /* Build configuration list for PBXProject "FinTrack" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3FE36A92A3974A50067774F;
+			productRefGroup = C3FE36B32A3974A50067774F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3FE36B12A3974A50067774F /* FinTrack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3FE36B02A3974A50067774F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39D0D0F2A3977680026574D /* Assets.xcassets in Resources */,
+				C39D0D112A3977680026574D /* Main.storyboard in Resources */,
+				C39D0D102A3977680026574D /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9CAF4EB069E3F1761F508D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinTrack/Pods-FinTrack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinTrack/Pods-FinTrack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinTrack/Pods-FinTrack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6ABD14593663E53775BAD72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinTrack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3FE36AE2A3974A50067774F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39D0D142A3977680026574D /* AppDelegate.swift in Sources */,
+				C39D0D132A3977680026574D /* Transaction.swift in Sources */,
+				C39D0D152A3977680026574D /* SceneDelegate.swift in Sources */,
+				C39D0D162A3977680026574D /* HomeView.swift in Sources */,
+				C39D0D1F2A3977680026574D /* LoginViewController.swift in Sources */,
+				C39D0D172A3977680026574D /* HomeViewController.swift in Sources */,
+				C39D0D0E2A3977680026574D /* LoginViewModel.swift in Sources */,
+				C39D0D1D2A3977680026574D /* AddCategoryPopupViewController.swift in Sources */,
+				C39D0D182A3977680026574D /* RegisterView.swift in Sources */,
+				C39D0D1A2A3977680026574D /* AddTransactionPopupView.swift in Sources */,
+				C39D0D1E2A3977680026574D /* LoginView.swift in Sources */,
+				C30359D32A3A618F00032341 /* ForgotPasswordViewController.swift in Sources */,
+				C39D0D1C2A3977680026574D /* AddCategoryPopupView.swift in Sources */,
+				C39D0D192A3977680026574D /* RegisterViewController.swift in Sources */,
+				C39D0D0D2A3977680026574D /* HomeViewModel.swift in Sources */,
+				C39D0D1B2A3977680026574D /* AddTransactionPopupViewController.swift in Sources */,
+				C30359D52A3A619E00032341 /* ForgotPasswordView.swift in Sources */,
+				C39D0D122A3977680026574D /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C39D0CF12A3977680026574D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39D0CF22A3977680026574D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C39D0CF32A3977680026574D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39D0CF42A3977680026574D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3FE36C42A3974A60067774F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3FE36C52A3974A60067774F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3FE36C72A3974A60067774F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA2FDE33CC69D5A6685F37B /* Pods-FinTrack.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4487JTZ98;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinTrack/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fin Track";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidraque.FinTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C3FE36C82A3974A60067774F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C858F4F5CD35061A0DD9D4E /* Pods-FinTrack.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4487JTZ98;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinTrack/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fin Track";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidraque.FinTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3FE36AD2A3974A50067774F /* Build configuration list for PBXProject "FinTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FE36C42A3974A60067774F /* Debug */,
+				C3FE36C52A3974A60067774F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3FE36C62A3974A60067774F /* Build configuration list for PBXNativeTarget "FinTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FE36C72A3974A60067774F /* Debug */,
+				C3FE36C82A3974A60067774F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3FE36AA2A3974A50067774F /* Project object */;
+}

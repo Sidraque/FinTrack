@@ -1,0 +1,20 @@
+PODS:
+  - DatePickerTextField (1.0.2)
+  - VMaskTextField (1.0.8)
+
+DEPENDENCIES:
+  - DatePickerTextField
+  - VMaskTextField
+
+SPEC REPOS:
+  trunk:
+    - DatePickerTextField
+    - VMaskTextField
+
+SPEC CHECKSUMS:
+  DatePickerTextField: e04e071ba02d0ee3ce61b74e1a38456e7d186f4b
+  VMaskTextField: e77fe33633f999c5c38e70bed0afece0625624a4
+
+PODFILE CHECKSUM: 062c094a2d5e3dd9779f9ad1b3a89ac0f267b3bf
+
+COCOAPODS: 1.12.1
