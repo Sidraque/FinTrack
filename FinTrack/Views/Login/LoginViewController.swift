@@ -40,19 +40,32 @@ class LoginViewController: UIViewController, LoginViewDelegate {
         viewModel.password = password
         
         if viewModel.validateLogin() {
-            if isEmailVerificationRequired {
-                let alert = UIAlertController(title: "E-mail não verificado", message: "Você precisa verificar seu e-mail antes de fazer login. Deseja reenviar o e-mail de verificação?", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: { _ in
-                    self.sendEmailVerification()
-                }))
-                alert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
-                present(alert, animated: true, completion: nil)
-            } else {
-                let homeViewController = HomeViewController()
-                navigationController?.pushViewController(homeViewController, animated: true)
+            Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+                if let error = error {
+                    // Exibir mensagem de erro de autenticação
+                    print("Erro de autenticação: \(error.localizedDescription)")
+                    return
+                }
+                
+                guard let user = authResult?.user else {
+                    return
+                }
+                
+                if user.isEmailVerified {
+                    let homeViewController = HomeViewController()
+                    self.navigationController?.pushViewController(homeViewController, animated: true)
+                } else {
+                    let alert = UIAlertController(title: "E-mail não verificado", message: "Você precisa verificar seu e-mail antes de fazer login. Deseja reenviar o e-mail de verificação?", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: { _ in
+                        self.sendEmailVerification()
+                    }))
+                    alert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
             }
         } else {
-            // Exibir mensagem de erro
+            // Exibir mensagem de erro de validação
+            print("Erro de validação")
         }
     }
     

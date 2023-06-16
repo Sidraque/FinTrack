@@ -103,7 +103,7 @@ class LoginView: UIView {
         addSubview(registerButton)
         
         // Email Verification Label
-        emailVerificationLabel.text = "Você precisa verificar seu e-mail antes de fazer login."
+        emailVerificationLabel.text = "Verifique seu e-mail antes de fazer login."
         emailVerificationLabel.textColor = UIColor.red
         emailVerificationLabel.textAlignment = .center
         emailVerificationLabel.numberOfLines = 0
@@ -146,11 +146,6 @@ class LoginView: UIView {
             loginButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
             loginButton.heightAnchor.constraint(equalToConstant: 55),
             
-            // Email Verification Label
-            emailVerificationLabel.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 8),
-            emailVerificationLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            emailVerificationLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            
             // Forgot Password Button
             forgotPasswordButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 4),
             forgotPasswordButton.leadingAnchor.constraint(equalTo: loginButton.leadingAnchor),
@@ -159,8 +154,12 @@ class LoginView: UIView {
             registerButton.topAnchor.constraint(equalTo: forgotPasswordButton.bottomAnchor, constant: 20),
             registerButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             registerButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
-            registerButton.heightAnchor.constraint(equalToConstant: 55)
+            registerButton.heightAnchor.constraint(equalToConstant: 55),
             
+            // Email Verification Label
+            emailVerificationLabel.topAnchor.constraint(equalTo: forgotPasswordButton.bottomAnchor, constant: 7),
+            emailVerificationLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            emailVerificationLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
             
         ])
     }
