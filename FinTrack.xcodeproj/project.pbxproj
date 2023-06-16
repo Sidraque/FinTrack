@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33F7A902CD8689FC0543FAF5 /* Pods_FinTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5832038F34161B8F26EB /* Pods_FinTrack.framework */; };
 		C30359D32A3A618F00032341 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30359D22A3A618F00032341 /* ForgotPasswordViewController.swift */; };
 		C30359D52A3A619E00032341 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30359D42A3A619E00032341 /* ForgotPasswordView.swift */; };
 		C39D0D0D2A3977680026574D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0CEC2A3977680026574D /* HomeViewModel.swift */; };
@@ -28,12 +29,13 @@
 		C39D0D1D2A3977680026574D /* AddCategoryPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D082A3977680026574D /* AddCategoryPopupViewController.swift */; };
 		C39D0D1E2A3977680026574D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D0A2A3977680026574D /* LoginView.swift */; };
 		C39D0D1F2A3977680026574D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0D0B2A3977680026574D /* LoginViewController.swift */; };
-		FEDC577DEBA1D409935C1E41 /* Pods_FinTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F9E50F5AFFF96036745A85 /* Pods_FinTrack.framework */; };
+		C3EA350A2A3C0A3400E2199C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3EA35092A3C0A3400E2199C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03F9E50F5AFFF96036745A85 /* Pods_FinTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C858F4F5CD35061A0DD9D4E /* Pods-FinTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinTrack.release.xcconfig"; path = "Target Support Files/Pods-FinTrack/Pods-FinTrack.release.xcconfig"; sourceTree = "<group>"; };
+		465E99B77993A54200E3330D /* Pods-FinTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinTrack.debug.xcconfig"; path = "Target Support Files/Pods-FinTrack/Pods-FinTrack.debug.xcconfig"; sourceTree = "<group>"; };
+		503F1CA601C475E87E978426 /* Pods-FinTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinTrack.release.xcconfig"; path = "Target Support Files/Pods-FinTrack/Pods-FinTrack.release.xcconfig"; sourceTree = "<group>"; };
+		C18D5832038F34161B8F26EB /* Pods_FinTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30359D22A3A618F00032341 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		C30359D42A3A619E00032341 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		C39D0CEC2A3977680026574D /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -56,8 +58,8 @@
 		C39D0D0A2A3977680026574D /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C39D0D0B2A3977680026574D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C39D0D0C2A3977680026574D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EA35092A3C0A3400E2199C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C3FE36B22A3974A50067774F /* FinTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDA2FDE33CC69D5A6685F37B /* Pods-FinTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinTrack.debug.xcconfig"; path = "Target Support Files/Pods-FinTrack/Pods-FinTrack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +67,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEDC577DEBA1D409935C1E41 /* Pods_FinTrack.framework in Frameworks */,
+				33F7A902CD8689FC0543FAF5 /* Pods_FinTrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AB39A76713F61389EFC3FED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C18D5832038F34161B8F26EB /* Pods_FinTrack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C30359D12A3A617700032341 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 				C39D0CEF2A3977680026574D /* Resources */,
 				C39D0CF82A3977680026574D /* SupportingFiles */,
 				C39D0D0C2A3977680026574D /* Info.plist */,
+				C3EA35092A3C0A3400E2199C /* GoogleService-Info.plist */,
 			);
 			path = FinTrack;
 			sourceTree = "<group>";
@@ -219,7 +230,7 @@
 				C39D0CE92A3977680026574D /* FinTrack */,
 				C3FE36B32A3974A50067774F /* Products */,
 				DE7A5DFBC41838B5C3BB6254 /* Pods */,
-				D4F81809FE96D3611876E890 /* Frameworks */,
+				3AB39A76713F61389EFC3FED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,19 +242,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4F81809FE96D3611876E890 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				03F9E50F5AFFF96036745A85 /* Pods_FinTrack.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DE7A5DFBC41838B5C3BB6254 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CDA2FDE33CC69D5A6685F37B /* Pods-FinTrack.debug.xcconfig */,
-				3C858F4F5CD35061A0DD9D4E /* Pods-FinTrack.release.xcconfig */,
+				465E99B77993A54200E3330D /* Pods-FinTrack.debug.xcconfig */,
+				503F1CA601C475E87E978426 /* Pods-FinTrack.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -255,17 +258,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3FE36C62A3974A60067774F /* Build configuration list for PBXNativeTarget "FinTrack" */;
 			buildPhases = (
-				F6ABD14593663E53775BAD72 /* [CP] Check Pods Manifest.lock */,
+				134661783A3EBCEEC9E5DA9D /* [CP] Check Pods Manifest.lock */,
 				C3FE36AE2A3974A50067774F /* Sources */,
 				C3FE36AF2A3974A50067774F /* Frameworks */,
 				C3FE36B02A3974A50067774F /* Resources */,
-				B9CAF4EB069E3F1761F508D1 /* [CP] Embed Pods Frameworks */,
+				ED84B87DE7F3F3C2FE335677 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FinTrack;
+			packageProductDependencies = (
+			);
 			productName = FinTrack;
 			productReference = C3FE36B22A3974A50067774F /* FinTrack.app */;
 			productType = "com.apple.product-type.application";
@@ -294,6 +299,9 @@
 				Base,
 			);
 			mainGroup = C3FE36A92A3974A50067774F;
+			packageReferences = (
+				C3EA350B2A3C0AF700E2199C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C3FE36B32A3974A50067774F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C39D0D0F2A3977680026574D /* Assets.xcassets in Resources */,
+				C3EA350A2A3C0A3400E2199C /* GoogleService-Info.plist in Resources */,
 				C39D0D112A3977680026574D /* Main.storyboard in Resources */,
 				C39D0D102A3977680026574D /* LaunchScreen.storyboard in Resources */,
 			);
@@ -317,24 +326,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B9CAF4EB069E3F1761F508D1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinTrack/Pods-FinTrack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinTrack/Pods-FinTrack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinTrack/Pods-FinTrack-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6ABD14593663E53775BAD72 /* [CP] Check Pods Manifest.lock */ = {
+		134661783A3EBCEEC9E5DA9D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -354,6 +346,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED84B87DE7F3F3C2FE335677 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinTrack/Pods-FinTrack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinTrack/Pods-FinTrack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinTrack/Pods-FinTrack-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -522,7 +531,7 @@
 		};
 		C3FE36C72A3974A60067774F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDA2FDE33CC69D5A6685F37B /* Pods-FinTrack.debug.xcconfig */;
+			baseConfigurationReference = 465E99B77993A54200E3330D /* Pods-FinTrack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -556,7 +565,7 @@
 		};
 		C3FE36C82A3974A60067774F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C858F4F5CD35061A0DD9D4E /* Pods-FinTrack.release.xcconfig */;
+			baseConfigurationReference = 503F1CA601C475E87E978426 /* Pods-FinTrack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -610,6 +619,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3EA350B2A3C0AF700E2199C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = C3FE36AA2A3974A50067774F /* Project object */;
 }

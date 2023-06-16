@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 protocol RegisterViewDelegate: AnyObject {
-    func registerButtonTapped(name: String, email: String, password: String)
+    func registerButtonTapped(name: String, email: String, password: String, birthday: String, gender: String)
     func loginScreenButtonTapped()
 }
 
@@ -204,7 +205,7 @@ class RegisterView: UIView {
             genderPickerView.topAnchor.constraint(equalTo: birthdayTextField.bottomAnchor, constant: 20),
             genderPickerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 40),
             genderPickerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -40),
-            genderPickerView.heightAnchor.constraint(equalToConstant: 70),
+            genderPickerView.heightAnchor.constraint(equalToConstant: 150),
 
             // Custom Gender Text Field
             customGenderTextField.topAnchor.constraint(equalTo: genderPickerView.bottomAnchor, constant: 7),
@@ -230,11 +231,15 @@ class RegisterView: UIView {
     }
 
     @objc private func registerButtonTapped() {
-        guard let name = nameTextField.text, let email = emailTextField.text, let password = passwordTextField.text else {
-            return
-        }
+        guard let name = nameTextField.text,
+              let email = emailTextField.text,
+              let password = passwordTextField.text,
+              let birthday = birthdayTextField.text,
+              let gender = customGenderTextField.isHidden ? genderOptions[genderPickerView.selectedRow(inComponent: 0)] : customGenderTextField.text else {
+                  return
+              }
 
-        delegate?.registerButtonTapped(name: name, email: email, password: password)
+        delegate?.registerButtonTapped(name: name, email: email, password: password, birthday: birthday, gender: gender)
     }
 
     @objc private func loginScreenButtonTapped() {

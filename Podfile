@@ -9,5 +9,7 @@ target 'FinTrack' do
   # Pods for FinTrack
   pod 'DatePickerTextField'
   pod 'VMaskTextField'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 end
 

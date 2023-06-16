@@ -22,6 +22,7 @@ class LoginView: UIView {
     private let forgotPasswordButton: UIButton
     private let registerButton: UIButton
     private let logoImageView: UIImageView
+    let emailVerificationLabel: UILabel
     
     override init(frame: CGRect) {
         // Inicialize as propriedades antes de chamar o super.init
@@ -31,6 +32,7 @@ class LoginView: UIView {
         forgotPasswordButton = UIButton()
         registerButton = UIButton()
         logoImageView = UIImageView()
+        emailVerificationLabel = UILabel()
         
         super.init(frame: frame)
         
@@ -100,6 +102,15 @@ class LoginView: UIView {
         registerButton.translatesAutoresizingMaskIntoConstraints = false
         addSubview(registerButton)
         
+        // Email Verification Label
+        emailVerificationLabel.text = "Você precisa verificar seu e-mail antes de fazer login."
+        emailVerificationLabel.textColor = UIColor.red
+        emailVerificationLabel.textAlignment = .center
+        emailVerificationLabel.numberOfLines = 0
+        emailVerificationLabel.font = UIFont.systemFont(ofSize: 14)
+        emailVerificationLabel.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(emailVerificationLabel)
+        
         // Configurar ações dos botões
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonTapped), for: .touchUpInside)
@@ -135,6 +146,11 @@ class LoginView: UIView {
             loginButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
             loginButton.heightAnchor.constraint(equalToConstant: 55),
             
+            // Email Verification Label
+            emailVerificationLabel.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 8),
+            emailVerificationLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            emailVerificationLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            
             // Forgot Password Button
             forgotPasswordButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 4),
             forgotPasswordButton.leadingAnchor.constraint(equalTo: loginButton.leadingAnchor),
@@ -144,6 +160,8 @@ class LoginView: UIView {
             registerButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             registerButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
             registerButton.heightAnchor.constraint(equalToConstant: 55)
+            
+            
         ])
     }
     
