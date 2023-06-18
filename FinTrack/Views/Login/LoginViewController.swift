@@ -22,7 +22,7 @@ class LoginViewController: UIViewController, LoginViewDelegate {
         view = loginView
         
         viewModel = LoginViewModel()
-        navigationItem.hidesBackButton = true
+        navigationItem.hidesBackButton = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,7 +42,7 @@ class LoginViewController: UIViewController, LoginViewDelegate {
         if viewModel.validateLogin() {
             Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
                 if let error = error {
-                    // Exibir mensagem de erro de autenticação
+                    // Erro de autenticação
                     print("Erro de autenticação: \(error.localizedDescription)")
                     return
                 }
@@ -64,7 +64,7 @@ class LoginViewController: UIViewController, LoginViewDelegate {
                 }
             }
         } else {
-            // Exibir mensagem de erro de validação
+            // Erro de validação
             print("Erro de validação")
         }
     }

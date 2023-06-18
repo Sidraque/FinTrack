@@ -25,7 +25,6 @@ class LoginView: UIView {
     let emailVerificationLabel: UILabel
     
     override init(frame: CGRect) {
-        // Inicialize as propriedades antes de chamar o super.init
         emailTextField = UITextField()
         passwordTextField = UITextField()
         loginButton = UIButton()
@@ -116,7 +115,6 @@ class LoginView: UIView {
         forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonTapped), for: .touchUpInside)
         registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
         
-        // Configurar constraints
         setupConstraints()
     }
     
@@ -157,7 +155,7 @@ class LoginView: UIView {
             registerButton.heightAnchor.constraint(equalToConstant: 55),
             
             // Email Verification Label
-            emailVerificationLabel.topAnchor.constraint(equalTo: forgotPasswordButton.bottomAnchor, constant: 7),
+            emailVerificationLabel.topAnchor.constraint(equalTo: registerButton.bottomAnchor, constant: 7),
             emailVerificationLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             emailVerificationLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
             

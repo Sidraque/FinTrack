@@ -46,10 +46,10 @@ extension RegisterViewController: RegisterViewDelegate {
     func registerButtonTapped(name: String, email: String, password: String, birthday: String, gender: String) {
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             if let error = error {
-                // Ocorreu um erro ao criar o usuário
+                // Erro ao criar o usuário
                 print("Erro ao criar o usuário: \(error.localizedDescription)")
             } else {
-                // O usuário foi criado com sucesso
+                // Sucesso
                 print("Usuário criado com sucesso!")
 
                 // Salvar os dados adicionais do usuário no Firestore
