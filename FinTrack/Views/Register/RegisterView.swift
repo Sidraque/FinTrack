@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import FirebaseFirestore
 
 protocol RegisterViewDelegate: AnyObject {
     func registerButtonTapped(name: String, email: String, password: String, birthday: String, gender: String)
@@ -14,7 +13,6 @@ protocol RegisterViewDelegate: AnyObject {
 }
 
 class RegisterView: UIView {
-
     weak var delegate: RegisterViewDelegate?
 
     private let scrollView: UIScrollView
@@ -31,7 +29,7 @@ class RegisterView: UIView {
     private let logoImageView: UIImageView
     private let birthdayTextField: UITextField
 
-    override init(frame: CGRect) {
+    init() {
         scrollView = UIScrollView()
         contentView = UIView()
 
@@ -45,7 +43,7 @@ class RegisterView: UIView {
         logoImageView = UIImageView()
         birthdayTextField = UITextField()
 
-        super.init(frame: frame)
+        super.init(frame: .zero)
 
         setupUI()
     }
@@ -58,7 +56,6 @@ class RegisterView: UIView {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         self.addGestureRecognizer(tapGesture)
 
-        // Configurar layout e adicionar subviews
         backgroundColor = UIColor.white
 
         // Scroll View
@@ -148,11 +145,10 @@ class RegisterView: UIView {
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(loginButton)
 
-        // Configurar ações dos botões
+        // Actions for buttons
         registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(loginScreenButtonTapped), for: .touchUpInside)
 
-        // Configurar constraints
         setupConstraints()
     }
 
@@ -270,3 +266,4 @@ extension RegisterView: UIPickerViewDelegate, UIPickerViewDataSource {
         }
     }
 }
+

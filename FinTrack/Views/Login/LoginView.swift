@@ -45,8 +45,7 @@ class LoginView: UIView {
     private func setupUI() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         self.addGestureRecognizer(tapGesture)
-
-        // Configurar layout e adicionar subviews
+        
         backgroundColor = UIColor.white
         
         // Logo
@@ -110,7 +109,7 @@ class LoginView: UIView {
         emailVerificationLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(emailVerificationLabel)
         
-        // Configurar ações dos botões
+        // Actions for buttons
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonTapped), for: .touchUpInside)
         registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
@@ -158,7 +157,6 @@ class LoginView: UIView {
             emailVerificationLabel.topAnchor.constraint(equalTo: registerButton.bottomAnchor, constant: 7),
             emailVerificationLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             emailVerificationLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
-            
         ])
     }
     

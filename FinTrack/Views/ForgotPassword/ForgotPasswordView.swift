@@ -37,6 +37,9 @@ class ForgotPasswordView: UIView {
     }
 
     private func setupUI() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        self.addGestureRecognizer(tapGesture)
+        
         backgroundColor = .white
 
         // Logo
@@ -70,11 +73,10 @@ class ForgotPasswordView: UIView {
         backButton.translatesAutoresizingMaskIntoConstraints = false
         addSubview(backButton)
 
-        // Configure actions for buttons
+        // Actions for buttons
         resetPasswordButton.addTarget(self, action: #selector(resetPasswordButtonTapped), for: .touchUpInside)
         backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
 
-        // Configure constraints
         setupConstraints()
     }
 
@@ -102,6 +104,10 @@ class ForgotPasswordView: UIView {
             backButton.topAnchor.constraint(equalTo: resetPasswordButton.bottomAnchor, constant: 20),
             backButton.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
+    }
+    
+    @objc private func handleTap() {
+        self.endEditing(true)
     }
 
     @objc private func resetPasswordButtonTapped() {
