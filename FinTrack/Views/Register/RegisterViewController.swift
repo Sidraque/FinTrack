@@ -76,6 +76,10 @@ extension RegisterViewController: RegisterViewModelDelegate {
     func registrationFailure(error: Error) {
         // Registration failure logic
         print("Erro ao criar o usuário: \(error.localizedDescription)")
+        
         // Display an error message to the user
+        let alert = UIAlertController(title: "Erro no cadastro", message: error.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }

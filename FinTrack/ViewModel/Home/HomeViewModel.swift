@@ -7,28 +7,52 @@
 
 import Foundation
 
+protocol HomeViewModelDelegate: AnyObject {
+    func totalAmountDidChange(_ viewModel: HomeViewModel)
+    func categoriesDidChange(_ viewModel: HomeViewModel)
+}
+
 class HomeViewModel {
+    private var totalAmount: Double = 0
     private var categories: [Category] = []
     
-    var totalValue: Double {
-        // Lógica para calcular o valor total em caixa com base nas transações
-        return 0.0
+    weak var delegate: HomeViewModelDelegate?
+    
+    var formattedTotalAmount: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = Locale.current
+        return formatter.string(from: NSNumber(value: totalAmount)) ?? ""
     }
     
-    func loadCategories(completion: @escaping ([Category]) -> Void) {
-        // Lógica para carregar as categorias do banco de dados ou de outra fonte de dados
-        
-        // Exemplo: Simulando o carregamento das categorias
-        let category1 = Category(name: "Categoria 1", type: .revenue, emoji: "😃")
-        let category2 = Category(name: "Categoria 2", type: .expense, emoji: "🤑")
-        
-        categories = [category1, category2]
-        
-        // Chame o bloco de conclusão com as categorias carregadas
-        completion(categories)
+    var numberOfCategories: Int {
+        return categories.count
     }
     
-    func saveCategory(_ category: Category) {
-        // Lógica para salvar a categoria no banco de dados ou em outra fonte de dados
+    func category(at index: Int) -> Category? {
+        guard index >= 0 && index < categories.count else {
+            return nil
+        }
+        return categories[index]
+    }
+    
+    func addCategory(name: String, type: CategoryType, emoji: String) {
+        let category = Category(name: name, type: type, emoji: emoji)
+        categories.append(category)
+        delegate?.categoriesDidChange(self)
+    }
+    
+    func addTransaction(title: String, value: Double, category: Category) {
+        let transaction = Transaction(title: title, value: value, category: category)
+        
+        if category.type == .revenue {
+            totalAmount += value
+        } else if category.type == .expense {
+            totalAmount -= value
+        }
+        
+        delegate?.totalAmountDidChange(self)
+        
+        // Aqui você pode armazenar a transação em uma lista ou fazer qualquer outro processamento necessário
     }
 }

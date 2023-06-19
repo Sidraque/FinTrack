@@ -13,7 +13,7 @@ struct Category {
     let emoji: String
 }
 
-enum CategoryType: String {
+enum CategoryType {
     case revenue
     case expense
 }

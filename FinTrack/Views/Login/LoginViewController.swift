@@ -22,7 +22,7 @@ class LoginViewController: UIViewController, LoginViewDelegate {
         view = loginView
         
         viewModel = LoginViewModel()
-        navigationItem.hidesBackButton = false
+        navigationItem.hidesBackButton = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +56,9 @@ class LoginViewController: UIViewController, LoginViewDelegate {
                     }
                 case .failure(let error):
                     print("Erro de autenticação: \(error.localizedDescription)")
+                    let alert = UIAlertController(title: "Erro de autenticação", message: "Email ou senha incorretos. Verifique suas credenciais e tente novamente.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self?.present(alert, animated: true, completion: nil)
                 }
             }
         } else {

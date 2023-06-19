@@ -7,47 +7,51 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, HomeViewDelegate {
+class HomeViewController: UIViewController {
     private var homeView: HomeView!
-    private var viewModel: HomeViewModel!
     private var categories: [Category] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.hidesBackButton = true
+        setupView()
+    }
+
+    private func setupView() {
+        // Configure Home View
         homeView = HomeView()
         homeView.delegate = self
-        view = homeView
-        
-        viewModel = HomeViewModel()
-        
-        viewModel.loadCategories { [weak self] loadedCategories in
-            self?.categories = loadedCategories
-            self?.homeView.updateCategories(loadedCategories)
-        }
+        homeView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(homeView)
+
+        // Constraints
+        NSLayoutConstraint.activate([
+            homeView.topAnchor.constraint(equalTo: view.topAnchor),
+            homeView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            homeView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            homeView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
     }
-    
+}
+
+extension HomeViewController: HomeViewDelegate {
     func addCategoryButtonTapped() {
-        let addCategoryPopupViewController = AddCategoryPopupViewController { [weak self] name, type, emoji in
-            self?.handleNewCategory(name: name, type: type, emoji: emoji)
-        }
-        present(addCategoryPopupViewController, animated: true, completion: nil)
+        let addCategoryPopup = AddCategoryPopupViewController()
+        addCategoryPopup.modalPresentationStyle = .formSheet
+        addCategoryPopup.modalTransitionStyle = .coverVertical
+        present(addCategoryPopup, animated: true, completion: nil)
     }
-    
+
     func addTransactionButtonTapped() {
-        let addTransactionPopupViewController = AddTransactionPopupViewController(categories: categories)
-        present(addTransactionPopupViewController, animated: true, completion: nil)
+        let addTransactionPopup = AddTransactionPopupViewController(categories: categories)
+        addTransactionPopup.modalPresentationStyle = .formSheet
+        addTransactionPopup.modalTransitionStyle = .coverVertical
+        present(addTransactionPopup, animated: true, completion: nil)
     }
     
-    private func handleNewCategory(name: String, type: String, emoji: String) {
-        guard let categoryType = CategoryType(rawValue: type) else {
-            return
-        }
-        
-        let newCategory = Category(name: name, type: categoryType, emoji: emoji)
-        viewModel.saveCategory(newCategory)
-        
-        categories.append(newCategory)
-        homeView.updateCategories(categories)
-    }
+    func profileButtonTapped() {
+       let profileViewController = ProfileViewController()
+       navigationController?.pushViewController(profileViewController, animated: true)
+   }
 }

@@ -8,38 +8,61 @@
 import UIKit
 
 class AddCategoryPopupViewController: UIViewController {
-    private var addCategoryPopupView: AddCategoryPopupView!
-    private var saveButton: UIButton!
-    
-    private var completion: ((String, String, String) -> Void)?
-    
-    convenience init(completion: @escaping (String, String, String) -> Void) {
-        self.init()
-        self.completion = completion
+    let popupView: AddCategoryPopupView
+    weak var delegate: AddCategoryPopupViewDelegate?
+
+    init() {
+        popupView = AddCategoryPopupView()
+        super.init(nibName: nil, bundle: nil)
+        popupView.delegate = self
+        modalPresentationStyle = .overCurrentContext
+        modalTransitionStyle = .crossDissolve
     }
-    
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func loadView() {
-        addCategoryPopupView = AddCategoryPopupView()
-        view = addCategoryPopupView
+        view = popupView
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        saveButton = UIButton(type: .system)
-        saveButton.setTitle("Salvar", for: .normal)
-        saveButton.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
-        addCategoryPopupView.addButton(saveButton)
+        // Additional setup if needed
     }
-    
-    @objc private func saveButtonTapped() {
-        guard let name = addCategoryPopupView.categoryName,
-              let type = addCategoryPopupView.categoryType,
-              let emoji = addCategoryPopupView.categoryEmoji else {
+}
+
+extension AddCategoryPopupViewController: AddCategoryPopupViewDelegate {
+    func saveCategoryButtonTapped(name: String, type: String, emoji: String) {
+        // Handle save category logic
+
+        let categoryType: CategoryType
+        
+        switch type {
+        case "Receita":
+            categoryType = .revenue
+        case "Despesa":
+            categoryType = .expense
+        default:
+            // Handle unrecognized type
             return
         }
-        
-        completion?(name, type, emoji)
+
+        let category = Category(name: name, type: categoryType, emoji: emoji)
+
+        // Informe o delegate que a categoria foi salva
+        delegate?.categorySaved(category)
+
+        // Feche a janela de popup
         dismiss(animated: true, completion: nil)
+    }
+
+    func cancelButtonTapped() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func categorySaved(_ category: Category) {
+        // Implemente as ações necessárias ao salvar a categoria
     }
 }
