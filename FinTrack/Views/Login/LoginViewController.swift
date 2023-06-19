@@ -56,15 +56,30 @@ class LoginViewController: UIViewController, LoginViewDelegate {
                     }
                 case .failure(let error):
                     print("Erro de autenticação: \(error.localizedDescription)")
-                    let alert = UIAlertController(title: "Erro de autenticação", message: "Email ou senha incorretos. Verifique suas credenciais e tente novamente.", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                    self?.present(alert, animated: true, completion: nil)
+                    if let errorCode = AuthErrorCode.Code(rawValue: error._code) {
+                        switch errorCode {
+                        case .wrongPassword:
+                            let alert = UIAlertController(title: "Erro de autenticação", message: "Senha incorreta. Verifique sua senha e tente novamente.", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                            self?.present(alert, animated: true, completion: nil)
+                        default:
+                            let alert = UIAlertController(title: "Erro de autenticação", message: "Email ou senha incorretos. Verifique suas credenciais e tente novamente.", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                            self?.present(alert, animated: true, completion: nil)
+                        }
+                    } else {
+                        let alert = UIAlertController(title: "Erro de autenticação", message: "Email ou senha incorretos. Verifique suas credenciais e tente novamente.", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self?.present(alert, animated: true, completion: nil)
+                    }
                 }
             }
         } else {
             print("Erro de validação")
         }
     }
+
+
     
     func forgotPasswordScreenButtonTapped() {
         let forgotPasswordViewController = ForgotPasswordViewController()
@@ -86,7 +101,7 @@ class LoginViewController: UIViewController, LoginViewDelegate {
                 }))
                 self?.present(alert, animated: true, completion: nil)
             case .failure(let error):
-                print("Erro ao enviar e-mail de verificação: \(error.localizedDescription)")
+            print("Erro ao enviar e-mail de verificação: (error.localizedDescription)")
             }
         }
     }
