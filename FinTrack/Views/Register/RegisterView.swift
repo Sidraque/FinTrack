@@ -123,7 +123,28 @@ class RegisterView: UIView {
         birthdayTextField.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(birthdayTextField)
 
-        // Configurar genderPickerView
+        // inputAccessoryView
+        let inputAccessoryView = UIView(frame: CGRect(x: 0, y: 0, width: frame.width, height: 110))
+        inputAccessoryView.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.3)
+        inputAccessoryView.layer.cornerRadius = 40
+
+        // UIDatePicker
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
+        datePicker.translatesAutoresizingMaskIntoConstraints = false
+        datePicker.layer.cornerRadius = 40
+        inputAccessoryView.addSubview(datePicker)
+
+        datePicker.centerXAnchor.constraint(equalTo: inputAccessoryView.centerXAnchor).isActive = true
+        datePicker.centerYAnchor.constraint(equalTo: inputAccessoryView.centerYAnchor).isActive = true
+
+        birthdayTextField.inputAccessoryView = inputAccessoryView
+
+        // Remover o teclado do birthdayTextField
+        birthdayTextField.inputView = UIView()
+
+        //genderPickerView
         genderPickerView.delegate = self
         genderPickerView.dataSource = self
         genderPickerView.translatesAutoresizingMaskIntoConstraints = false
@@ -168,7 +189,7 @@ class RegisterView: UIView {
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
 
             // Logo
-            logoImageView.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: -85),
+            logoImageView.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: -55),
             logoImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             logoImageView.widthAnchor.constraint(equalToConstant: 290),
             logoImageView.heightAnchor.constraint(equalToConstant: 290),
@@ -201,7 +222,7 @@ class RegisterView: UIView {
             genderPickerView.topAnchor.constraint(equalTo: birthdayTextField.bottomAnchor, constant: 20),
             genderPickerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 40),
             genderPickerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -40),
-            genderPickerView.heightAnchor.constraint(equalToConstant: 150),
+            genderPickerView.heightAnchor.constraint(equalToConstant: 60),
 
             // Custom Gender Text Field
             customGenderTextField.topAnchor.constraint(equalTo: genderPickerView.bottomAnchor, constant: 7),
@@ -241,6 +262,11 @@ class RegisterView: UIView {
     @objc private func loginScreenButtonTapped() {
         delegate?.loginScreenButtonTapped()
     }
+
+    @objc private func datePickerValueChanged(_ sender: UIDatePicker) {
+        birthdayTextField.text = DateFormatter.birthdayFormatter.string(from: sender.date)
+    }
+    
 }
 
 extension RegisterView: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -267,3 +293,10 @@ extension RegisterView: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
+extension DateFormatter {
+    static let birthdayFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        return formatter
+    }()
+}
